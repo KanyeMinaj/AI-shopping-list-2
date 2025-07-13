@@ -1,0 +1,8 @@
+# packages.txt
+# Used by Streamlit Cloud to install system-level dependencies
+
+# Required for pyarrow and other data science libraries
+build-essential
+
+# Required for spaCy and other C-extension packages
+python3-dev
