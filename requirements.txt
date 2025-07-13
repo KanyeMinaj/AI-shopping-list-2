@@ -1,0 +1,13 @@
+streamlit
+groq
+youtube-transcript-api
+google-api-python-client
+transformers
+torch
+nltk
+spacy
+requests
+beautifulsoup4
+pandas
+numpy
+scikit-learn
