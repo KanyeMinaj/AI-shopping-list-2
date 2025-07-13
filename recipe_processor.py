@@ -4,7 +4,6 @@ Recipe data processor for cleaning and structuring extracted data
 import re
 import json
 import nltk
-import spacy
 from typing import List, Dict, Tuple
 from collections import defaultdict
 import logging
@@ -41,12 +40,8 @@ class RecipeProcessor:
             "pinch", "dash", "handful", "clove", "cloves", "piece", "pieces", "slice", "slices"
         ]
         
-        # Load spaCy model if available
-        try:
-            self.nlp = spacy.load("en_core_web_sm")
-        except:
-            self.nlp = None
-            logging.warning("spaCy model not found. Install with: python -m spacy download en_core_web_sm")
+        # spaCy removed; using NLTK for NLP processing
+        self.nlp = None
     
     def clean_ingredient(self, ingredient: str) -> str:
         """
